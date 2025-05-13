@@ -21,7 +21,7 @@
 
         <form action="/" method="post" class="mb-2">
             <div class="form-group mb-2">
-                <input type="text" class="form-control" name="title" >
+                <input type="text" class="form-control" name="title" required>
             </div>
 
             <button type="submit" class="btn btn-primary">Create!</button>
@@ -34,7 +34,7 @@
                         <li class="list-group-item d-flex justify-content-between align-items-center">
                             <span><%= note.title %></span>
                             <div>
-                                <button class="btn btn-outline-primary" data-type="edit" data-id="<%= note.id %>">Редактировать</button>
+                                <button class="btn btn-outline-primary" data-type="edit" data-id="<%= note.id %>" data-title="<%= note.title %>">Обновить</button>
                                 <button class="btn btn-danger" data-type="remove" data-id="<%= note.id %>">&times;</button>
 
                             </div>

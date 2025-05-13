@@ -7,7 +7,7 @@ import {
 } from "./notes.controller.js";
 import express from "express";
 
-const port = 3000;
+const port = 3001;
 const app = express();
 
 app.set("view engine", "ejs");
